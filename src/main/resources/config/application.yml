@@ -103,6 +103,14 @@ spring:
         #- tls
   jmx:
     enabled: false
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/TestJhipster
+    username: tudor
+    password: admin
+    hikari:
+      poolName: Hikari
+      auto-commit: false
   data:
     jpa:
       repositories:
